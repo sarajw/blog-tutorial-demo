@@ -13,13 +13,17 @@ const identity = {
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"]
 
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css'
+
 const skillColor = "green"
 const fontWeight = "bold"
 const textCase = "uppercase"
-
-import '../styles/global.css'
+const bulletStyle = "'*'"
 ---
-<style define:vars={{skillColor, fontWeight, textCase}}>
+<style define:vars={{skillColor, fontWeight, textCase, bulletStyle}}>
   h1 {
     color: purple;
   }
@@ -27,6 +31,9 @@ import '../styles/global.css'
     color: var(--skillColor);
     font-weight: var(--fontWeight);
     text-transform: var(--textCase);
+  }
+  ul li::marker {
+    content: var(--bulletStyle);
   }
 </style>
 
@@ -39,10 +46,7 @@ import '../styles/global.css'
 		<title>{pageTitle}</title>
 	</head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
 
@@ -68,5 +72,9 @@ import '../styles/global.css'
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
