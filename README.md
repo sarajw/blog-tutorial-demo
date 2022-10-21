@@ -1,3 +1,3 @@
-# Astro Tutorial - Part 5
+# Astro Tutorial - Final Blog Project
 
-The Astro tutorial "Build a Blog" project. State of the code after the end of Unit 5.
+This is the project you'll make with the [Astro Tutorial](https://docs.astro.build/en/tutorial/0-introduction/).
