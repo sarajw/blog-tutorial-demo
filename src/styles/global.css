@@ -1,8 +1,8 @@
 html {
-  background-color: #00539F;
+  background-color: #00539f;
 }
 body {
-  background-color: #E2CAF1;
+  background-color: #e2caf1;
   margin: 0 auto;
   width: 80%;
   max-width: 80ch;
@@ -13,7 +13,7 @@ body {
 h1 {
   margin: 0;
   padding: 20px 0;
-  color: #00539F;
+  color: #00539f;
   text-shadow: 3px 3px 1px grey;
 }
 
@@ -51,7 +51,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover,
+a:focus {
   background-color: #ff9776;
 }
 

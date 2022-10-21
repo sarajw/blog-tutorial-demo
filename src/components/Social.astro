@@ -1,8 +1,10 @@
 ---
-const {platform, username} = Astro.props
+const { platform, username } = Astro.props;
 ---
-<span class="social-platform"><a href={`https://www.${platform}.com/${username}`}>{platform}</a></span>
 
+<span class="social-platform"
+  ><a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+</span>
 
 <style>
   .social-platform {
@@ -12,7 +14,7 @@ const {platform, username} = Astro.props
     border-radius: 3px;
   }
   a {
-    color: #00539F;
+    color: #00539f;
     text-decoration: none;
   }
 </style>
